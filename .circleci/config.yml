@@ -15,10 +15,6 @@ jobs:
           name: Run Cypress Tests
           command: npm test
 
-      - store_test_results:
-          path: cypress/videos
-      - store_artifacts:
-          path: cypress/screenshots
 
 workflows:
   version: 2
