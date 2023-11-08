@@ -7,8 +7,6 @@ jobs:
 
     steps:
       - checkout # Check out your code repository
-      - setup_remote_docker:
-            version: 14.7.0
       - run:
           name: Install Dependencies
           command: npm install
