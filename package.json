@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress/e2e/*.cy.js"
+    "npm test": "npx cypress run"
   },
   "repository": {
     "type": "git",
