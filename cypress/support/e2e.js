@@ -19,6 +19,7 @@ import '@testing-library/cypress/add-commands'
 import '@shelex/cypress-allure-plugin'
 require('@4tw/cypress-drag-drop')
 import 'cypress-axe'
+import 'cypress-mochawesome-reporter/register';
 Cypress.on('uncaught:exception', (err, runnable) => {
     // returning false here prevents Cypress from
     // failing the test

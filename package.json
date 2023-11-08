@@ -17,14 +17,14 @@
     "url": "https://github.com/SurekhaGadhave123/CircleCIGoal/issues"
   },
   "homepage": "https://github.com/SurekhaGadhave123/CircleCIGoal#readme",
-
   "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5",
     "@shelex/cypress-allure-plugin": "^2.5.0",
     "@testing-library/cypress": "^10.0.1",
     "cypress": "^13.4.0",
     "cypress-axe": "^1.5.0",
-    "@4tw/cypress-drag-drop": "^2.2.5",
-    "cypress-iframe": "^1.0.1"
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.6.1"
   },
   "dependencies": {
     "dayjs": "^1.11.10",
