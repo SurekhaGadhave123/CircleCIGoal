@@ -1,9 +1,9 @@
-// "type": module
 const { defineConfig } = require("cypress");
 const allureWriter = require("@shelex/cypress-allure-plugin/writer");
 
 
 module.exports = defineConfig({
+  type: module,
   chromeWebSecurity: false,
   viewportWidth: 1280,
   viewportHeight: 720,
