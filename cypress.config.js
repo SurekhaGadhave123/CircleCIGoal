@@ -1,3 +1,4 @@
+// "type": module
 const { defineConfig } = require("cypress");
 const allureWriter = require("@shelex/cypress-allure-plugin/writer");
 
