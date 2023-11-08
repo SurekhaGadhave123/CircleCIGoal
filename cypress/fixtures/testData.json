@@ -1,0 +1,18 @@
+{
+  "testScenario1": {
+  "sliderEndValue": "95"
+},
+  "formFields": {
+    "name": "surekha",
+    "email": "surekhagadhave@gmail.com",
+    "password": "12345",
+    "company": "ABC Pvt Ltd",
+    "website": "wwww.ABCPvtLtd.com",
+    "country": "India",
+    "city": "Ahmedabad",
+    "address1": "Binori Bsquare",
+    "address2": "Ambli - Bopal Rd",
+    "state": "Gujrat",
+    "zipcode": "380058"
+  }
+}
