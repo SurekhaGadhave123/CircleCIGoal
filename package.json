@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,7 @@
     "url": "https://github.com/SurekhaGadhave123/CircleCIGoal/issues"
   },
   "homepage": "https://github.com/SurekhaGadhave123/CircleCIGoal#readme",
+
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^2.5.0",
     "@testing-library/cypress": "^10.0.1",
