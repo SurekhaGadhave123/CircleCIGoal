@@ -5,5 +5,4 @@ workflows:
   use-my-orb:
     jobs:
       - cypress-run:
-          start-command: 'npm install'
-          cypress-command: 'npx cypress run'
+
