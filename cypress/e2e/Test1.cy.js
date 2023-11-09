@@ -8,7 +8,6 @@ describe('Test Scenario 1', () => {
         data=fdata
     })
   })
-
     it('User should be able to Handle Drag & Drop Sliders', () => {
         const  testscenario=new TestScenario1()
         cy.url()
