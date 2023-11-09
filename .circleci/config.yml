@@ -7,9 +7,3 @@ workflows:
       cypress-run:
           start-command: 'npm install'
           cypress-command: 'npx cypress run'
-
-    workflows:
-      version: 2
-      test:
-        jobs:
-          - cypress-run
