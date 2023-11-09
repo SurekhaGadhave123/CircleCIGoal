@@ -1,8 +1,12 @@
 version: 2.1
 orbs:
+  node: circleci/node@5.1.0
   cypress: cypress-io/cypress@1.27.0
 workflows:
   build:
     jobs:
+      - node/install-packages:
+          cache-path: ~/project/node_modules
+          verride-ci-command: npm install
       - cypress/run:
           yarn: true
