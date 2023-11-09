@@ -8,7 +8,7 @@ module.exports = defineConfig({
   viewportWidth: 1280,
   viewportHeight: 720,
   allure:true,
-  video: true,
+  video: false,
   screenshotOnRunFailure:true,
   log:true,
   watchForFileChanges:false,
@@ -17,6 +17,7 @@ module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     charts: true,
+    mochaFile: "cypress/results/results.xml",
     reportPageTitle: 'custom-title',
     embeddedScreenshots: true,
     inlineAssets: true,

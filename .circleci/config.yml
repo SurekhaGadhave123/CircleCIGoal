@@ -1,9 +1,19 @@
 version: 2.1
-orbs:
-  cypress: cypress-io/cypress@3
-  workflow:
-    use-my-orb:
-      jobs:
-        - cypress-run:
-            start-command: 'npm install'
-            cypress-command: 'npm run test'
+
+jobs:
+  build:
+    docker:
+      - image: cypress/base:14
+
+    steps:
+      - checkout
+
+      # Install dependencies
+      - run:
+          name: Install Dependencies
+          command: npm install
+
+      # Run Cypress tests
+      - run:
+          name: Run Cypress Tests
+          command: npm run cy:run
