@@ -1,9 +1,21 @@
-version: 2.1
-orbs:
-  cypress: cypress-io/cypress@1
-workflows:
+#version: 2.1
+#orbs:
+#  cypress: cypress-io/cypress@1
+#workflows:
+#  build:
+#    jobs:
+#      - cypress/run:
+#          yarn: true
+jobs:
   build:
+    docker:
+      - image: cimg/base:2023.06
+    steps:
+      - checkout
+      - run: npx cypress run
+
+workflows:
+  build_and_test:
     jobs:
-      - cypress/run:
-          yarn: true
+      - build
 
