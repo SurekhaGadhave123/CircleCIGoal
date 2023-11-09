@@ -8,7 +8,7 @@ orbs:
         - image: cimg/base:stable
       steps:
         - cypress/run-tests
-  workflows:
+workflows:
     example-workflow:
       jobs:
         - example-job
