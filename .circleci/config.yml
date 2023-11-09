@@ -15,8 +15,5 @@ jobs:
 workflows:
   build:
     jobs:
-      - node/install-packages:
-          cache-path: ~/project/node_modules
-          override-ci-command: npm install
       - cypress/run:
           yarn: true
