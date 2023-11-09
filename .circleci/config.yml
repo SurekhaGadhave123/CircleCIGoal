@@ -2,8 +2,8 @@ version: 2.1
 orbs:
   cypress: cypress-io/cypress@3
   workflow:
-    use-my-orb:
-    jobs:
-      - cypress-run:
-        start-command: 'npm install'
-        cypress-command: 'npm run cy:run'
+      use-my-orb:
+      jobs:
+        - cypress-run:
+          start-command: 'npm install'
+          cypress-command: 'npm run cy:run'
