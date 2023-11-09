@@ -5,9 +5,9 @@ jobs:
       - image: cypress/base:14
     steps:
       - checkout
-      - run:
-        name: Install Dependencies
-        command: npm install
-      - run:
+        - run:
+           name: Install Dependencies
+          command: npm install
+        - run:
           name: Run Cypress Tests
           command: npm run test
