@@ -5,5 +5,5 @@ workflows:
     welcome:
       jobs:
         - cypress/run:
-        - start-command: 'npm install'
-          cypress-command: 'npx cypress run'
+            start-command: 'npm install'
+            cypress-command: 'npx cypress run'
