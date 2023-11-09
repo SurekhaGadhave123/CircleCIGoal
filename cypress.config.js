@@ -1,7 +1,7 @@
-// const { defineConfig } = require("cypress");
+const { defineConfig } = require("cypress");
 
-module.exports = {
-  type: 'Module',
+module.exports = defineConfig({
+  type: 'module',
   chromeWebSecurity: false,
   viewportWidth: 1280,
   viewportHeight: 720,
@@ -27,4 +27,4 @@ module.exports = {
     },
     specPattern: 'cypress/e2e/*.cy.{js,jsx,ts,tsx}'
   },
-};
+});
