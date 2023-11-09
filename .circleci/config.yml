@@ -6,4 +6,4 @@ orbs:
       jobs:
         - cypress-run:
           start-command: 'npm install'
-          cypress-command: 'npm run cy:run'
+          cypress-command: 'npx cypress run'
