@@ -1,7 +1,7 @@
 version: 2.1
 orbs:
-  welcome: cypress-io/cypress@5.1.0
+  cypress: cypress-io/cypress@3
 workflows:
     welcome:
       jobs:
-        - welcome/run
+        - cypress/run
