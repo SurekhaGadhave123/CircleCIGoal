@@ -7,7 +7,6 @@ module.exports = defineConfig({
   chromeWebSecurity: false,
   viewportWidth: 1280,
   viewportHeight: 720,
-  allure:true,
   video: false,
   screenshotOnRunFailure:true,
   log:true,
@@ -26,7 +25,6 @@ module.exports = defineConfig({
 
   e2e: {
     setupNodeEvents(on, config) {
-      allureWriter(on, config);
       return config;
     },
     specPattern: 'cypress/e2e/*.cy.{js,jsx,ts,tsx}'
