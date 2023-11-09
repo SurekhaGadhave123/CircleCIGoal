@@ -12,7 +12,7 @@ jobs:
       - image: cimg/base:2023.06
     steps:
       - checkout
-      - run: npx cypress run
+      - run: 'npx cypress run'
 
 workflows:
   build_and_test:
