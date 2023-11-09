@@ -5,4 +5,4 @@ workflows:
   build:
     jobs:
       - cypress/run:
-          install-command: yarn install --frozen-lockfile
+          executor: cypress/base-14
