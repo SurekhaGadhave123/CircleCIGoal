@@ -7,7 +7,7 @@ orbs:
         # replace with your preferred image
         - image: cimg/base:stable
       steps:
-        - cypress/run-tests
+        - cypress/run
   workflows:
     example-workflow:
       jobs:
