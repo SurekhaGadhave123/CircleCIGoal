@@ -1,19 +1,13 @@
-version: '2.1'
-orbs:
-  node: circleci/node@5.1.0
+version: 2.1
 jobs:
-  test:
-    executor:
-      name: node/default
-      tag: '16'
+  build:
+    docker:
+      - image: cypress/base:14
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: yarn
       - run:
-          command: yarn run test
-          name: Run YARN tests
-workflows:
-  test_my_app:
-    jobs:
-      - test
+        name: Install Dependencies
+        command: npm install
+      - run:
+          name: Run Cypress Tests
+          command: npm run test
