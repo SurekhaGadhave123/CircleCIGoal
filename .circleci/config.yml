@@ -1,19 +1,8 @@
-version: 2.1
-orbs:
-  node: circleci/node@5.1.0
-  cypress: cypress-io/cypress@1.27.0
-jobs:
-  install-node-example:
-    docker:
-      - image: cimg/base:stable
-    steps:
-      - checkout
-      - node/install:
-          install-yarn: true
-          node-version: '16.13'
-      - run: node --version
-workflows:
-  build:
-    jobs:
-      - cypress/run:
-          yarn: true
+  version: '2.1'
+  orbs:
+    node: circleci/node@x.y
+  workflows:
+    run-npm-command:
+      jobs:
+        - node/run:
+            npm-run: build
