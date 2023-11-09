@@ -4,4 +4,6 @@ orbs:
 workflows:
     welcome:
       jobs:
-        - cypress/run
+        - cypress/run:
+        - start-command: 'npm install'
+          cypress-command: 'npx cypress run'
