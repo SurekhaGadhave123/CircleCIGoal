@@ -1,23 +1,9 @@
 version: 2.1
-
-jobs:
-  build:
-    docker:
-      - image: cypress/base:14
-
-    steps:
-      - checkout # Check out your code repository
-      - run:
-          name: Install Dependencies
-          command: npm install
-
-      - run:
-          name: Run Cypress Tests
-          command: npm test
-
-
-workflows:
-  version: 2
-  build-and-test:
+orbs:
+  cypress: cypress-io/cypress@3
+workflow:
+  use-my-orb:
     jobs:
-      - build
+      - cypress-run:
+          start-command: 'npm install'
+          cypress-command: 'npx cypress run'
