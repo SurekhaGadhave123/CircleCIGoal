@@ -1,27 +1,8 @@
 version: 2.1
 orbs:
-  node: circleci/node@5.0.2
-  heroku: circleci/heroku@1.2.6
-
-jobs:
-  build_and_test:
-    executor: node/default
-    steps:
-      - checkout
-      - node/install-packages:
-          pkg-manager: yarn
-      - run:
-          command: yarn test
-          name: Run tests
-      - run:
-          command: yarn build
-          name: Build app
-      - persist_to_workspace:
-          root: ~/project
-          paths:
-            - .
+  cypress: cypress-io/cypress@1
 workflows:
-  test_my_app:
-    jobs:
-      - build_and_test
-
+    build:
+      jobs:
+        - cypress/run:
+            yarn: true

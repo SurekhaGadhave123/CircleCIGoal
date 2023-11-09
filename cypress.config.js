@@ -11,6 +11,7 @@ module.exports = defineConfig({
   watchForFileChanges:false,
   defaultCommandTimeout:6000,
   pageLoadTimeout:10000,
+  baseUrl:'https://www.lambdatest.com/',
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     charts: true,
